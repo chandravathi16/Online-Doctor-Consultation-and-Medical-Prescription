@@ -1,0 +1,14 @@
+nav li{
+    display:inline-block;
+    line-height:20px;
+    border-radius:20px;
+    margin-left: 15px;
+}
+nav ul li{
+    margin-left: 15px;
+}
+nav li:hover {
+    color:#020101;
+    background-color: rgb(16, 83, 227);
+    border-radius:14px;
+}

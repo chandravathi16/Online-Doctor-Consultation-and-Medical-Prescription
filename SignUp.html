@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css"> 
+    <!-- SignUp form validation-->
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                </li>
+            </ul> &nbsp;&nbsp;
+            <a href="UserLogin.html"> <button class="btn btn-primary" type="button">Login </button></a>
+        </div>
+    </nav>
+    <br />
+    <h4 class="text-center font-weight-bold">Online Doctor Consultation</h4>
+    <!-- SignUp form -->
+    <section class="container-fluid"> 
+        <!-- row and justify-content-center class is used to place the form in center -->
+        <section class="row justify-content-center">
+            <img src="images/signupimg.jpeg" class="rounded" alt="image" width="410" height="415" />
+            <section class="col-12 col-sm-6 col-md-4">
+                <form class="form-container" name="signupform" method="post" onsubmit="return validate()">
+                    <div class="form-group">
+                        <h4 class="text-center font-weight-bold">Sign Up</h4>
+                        <div class="form-group">
+                            <label for="username"> Username<span style="color: red;"> *</span></label>
+                            <input type="text" class="form-control" id="username" placeholder="Username" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password<span style="color: red;"> *</span></label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email Address<span style="color: red;"> *</span></label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describeby="emailHelp" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileno">Mobile Number<span style="color: red;"> *</span></label>
+                            <input type="number" class="form-control" id="mobileno" placeholder="+91" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SignUp</button> &nbsp;&nbsp;
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

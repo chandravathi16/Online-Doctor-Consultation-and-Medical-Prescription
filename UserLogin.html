@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css"> 
+    <!--Patient/User login form validation-->
+    <script type="text/javascript" src="userform.js"></script>
+</head>
+
+<body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.php">Service</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Patient Login form -->
+    <section class="container-fluid">
+        <br />
+        <h3 class="text-center font-weight-bold">Online Doctor Consultation</h3>
+        <br />
+        <!-- row and justify-content-center class is used to place the form in center -->
+        <section class="row justify-content-center">
+            <img src="images/userloginimg.jpg" class="rounded" alt="image" width="280" height="350" />
+            <section class="col-12 col-sm-6 col-md-4">
+                <form class="form-container" name="userform" method="post" action="view_patients.php" onsubmit="return validate()">
+                    <div class="form-group">
+                        <h4 class="text-center font-weight-bold">Patient Login</h4>
+                        <label for="date">Date to consult doctor<span style="color: red;"> *</span></label>
+                        <input type="date" class="form-control" id="date" name="dt" placeholder="date" />
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1">Email Address<span style="color: red;"> *</span></label>
+                        <input type="email" class="form-control" id="InputEmail1" name="InputEmail" aria-describeby="emailHelp" placeholder="Enter email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password<span style="color: red;"> *</span></label>
+                        <input type="password" class="form-control" id="password" name="pswd" placeholder="Password" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button> &nbsp;&nbsp;
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                    <div class="form-footer">
+                        <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
